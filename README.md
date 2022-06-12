@@ -1,4 +1,20 @@
+## KNN构图实验
+
+| K值   | 本地测试score | 云端结果  |
+| ---- | --------- | ----- |
+| 5    | 47        | 41.60 |
+| 10   | 46        | 41.34 |
+| 15   | 44        | 40.94 |
+| 20   | 46        | 没测    |
+
+
+
+
+
+
+
 # KDDCup 22 Wind Power Forecasting with Spatial-Temporal Graph Transformer
+
 ## Introduction
 Wind Power Forecasting (WPF) aims to accurately estimate the wind power supply of a wind farm at different time scales. 
 Wind power is one of the most installed renewable energy resources in the world, and the accuracy of wind power forecasting method directly affects dispatching and operation safety of the power grid.
@@ -32,7 +48,7 @@ paddlepaddle-gpu>=2.2.2
 ```
 
 
-    
+​    
 ## Model Architecture
 
 We simply design a model as descripted bellows.
@@ -42,8 +58,8 @@ We simply design a model as descripted bellows.
 ## Performance
 
 |        | Dev Score | Max-dev Test Score |
-|--------|-----------|--------------------|
-| Report |   -       | 47.7               |
+| ------ | --------- | ------------------ |
+| Report | -         | 47.7               |
 | Ours   | 38.93     | 46.83              |
 
 ## Prediction Visualization
