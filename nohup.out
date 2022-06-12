@@ -1,0 +1,61 @@
+nohup: ignoring input
+[INFO] 2022-06-01 10:59:53,225 [wpf_dataset.py:  150]:	adding time
+[INFO] 2022-06-01 11:00:29,250 [wpf_dataset.py:  115]:	data_shape: (134, 28224, 12)
+[INFO] 2022-06-01 11:00:29,250 [wpf_dataset.py:  116]:	graph: {"class": "Graph", "num_nodes": 134, "edges_shape": [536, 2], "node_feat": [], "edge_feat": []}
+[INFO] 2022-06-01 11:00:34,510 [wpf_dataset.py:  150]:	adding time
+[INFO] 2022-06-01 11:01:13,900 [wpf_dataset.py:  115]:	data_shape: (134, 3744, 12)
+[INFO] 2022-06-01 11:01:13,900 [wpf_dataset.py:  116]:	graph: {"class": "Graph", "num_nodes": 134, "edges_shape": [536, 2], "node_feat": [], "edge_feat": []}
+[INFO] 2022-06-01 11:01:19,150 [wpf_dataset.py:  150]:	adding time
+[INFO] 2022-06-01 11:01:59,211 [wpf_dataset.py:  115]:	data_shape: (134, 3600, 12)
+[INFO] 2022-06-01 11:01:59,211 [wpf_dataset.py:  116]:	graph: {"class": "Graph", "num_nodes": 134, "edges_shape": [536, 2], "node_feat": [], "edge_feat": []}
+W0601 11:02:00.112047 12562 device_context.cc:447] Please NOTE: device: 0, GPU Compute Capability: 7.5, Driver API Version: 11.4, Runtime API Version: 10.2
+W0601 11:02:00.116644 12562 device_context.cc:465] device: 0, cuDNN Version: 8.2.
+{'data_path': './data', 'filename': 'wtbdata_245days.csv', 'input_len': 144, 'output_len': 288, 'var_len': 10, 'capacity': 134, 'patient': 5, 'train_days': 196, 'val_days': 25, 'test_days': 24, 'total_days': 245, 'num_workers': 2, 'epoch': 20, 'batch_size': 64, 'output_path': './output/baseline', 'log_per_steps': 100, 'lr': 5e-05, 'model': {'hidden_dims': 128, 'nhead': 8, 'dropout': 0.5, 'encoder_layers': 4, 'decoder_layers': 4}, 'loss': {'name': 'FilterMSELoss'}}
+[INFO] 2022-06-01 11:02:49,589 [     main.py:  139]:	Step 100 Train MSE-Loss: 3.595238 RMSE-Loss: 1.8961112
+[INFO] 2022-06-01 11:03:35,435 [     main.py:  139]:	Step 200 Train MSE-Loss: 2.969933 RMSE-Loss: 1.7233493
+[INFO] 2022-06-01 11:04:21,011 [     main.py:  139]:	Step 300 Train MSE-Loss: 3.4173534 RMSE-Loss: 1.8486085
+[INFO] 2022-06-01 11:05:06,716 [     main.py:  139]:	Step 400 Train MSE-Loss: 2.983592 RMSE-Loss: 1.7273078
+[INFO] 2022-06-01 11:06:54,680 [     main.py:  155]:	Valid {'mae': 50.28922, 'score': 54.834564208984375, 'rmse': 59.379913, 'farm_mae': 50.535103, 'farm_score': 56.35194396972656, 'farm_rmse': 62.168785, 'loss': 5.901927}
+[INFO] 2022-06-01 11:08:21,954 [     main.py:  169]:	Test {'mae': 39.31255740170335, 'score': 42.5542656380384, 'rmse': 45.79597387437345, 'farm_mae': 44.450897, 'farm_score': 47.72095489501953, 'farm_rmse': 50.991013, 'loss': 2.8563795}
+[INFO] 2022-06-01 11:08:22,008 [    utils.py:   52]:	save model ./output/baseline/model_0
+[INFO] 2022-06-01 11:08:55,512 [     main.py:  139]:	Step 500 Train MSE-Loss: 3.3333216 RMSE-Loss: 1.8257387
+[INFO] 2022-06-01 11:09:45,089 [     main.py:  139]:	Step 600 Train MSE-Loss: 3.309489 RMSE-Loss: 1.8192002
+[INFO] 2022-06-01 11:10:33,652 [     main.py:  139]:	Step 700 Train MSE-Loss: 3.4751587 RMSE-Loss: 1.8641777
+[INFO] 2022-06-01 11:11:23,221 [     main.py:  139]:	Step 800 Train MSE-Loss: 3.459852 RMSE-Loss: 1.8600677
+[INFO] 2022-06-01 11:13:29,590 [     main.py:  155]:	Valid {'mae': 50.63133, 'score': 55.363853454589844, 'rmse': 60.096382, 'farm_mae': 49.819622, 'farm_score': 56.14380645751953, 'farm_rmse': 62.467995, 'loss': 6.1653185}
+[INFO] 2022-06-01 11:14:58,390 [     main.py:  169]:	Test {'mae': 38.27067626292483, 'score': 41.51597968764882, 'rmse': 44.76128311237282, 'farm_mae': 43.072964, 'farm_score': 46.37409591674805, 'farm_rmse': 49.67523, 'loss': 2.7452664}
+[INFO] 2022-06-01 11:15:15,353 [     main.py:  139]:	Step 900 Train MSE-Loss: 2.9815319 RMSE-Loss: 1.7267113
+[INFO] 2022-06-01 11:16:03,265 [     main.py:  139]:	Step 1000 Train MSE-Loss: 2.951945 RMSE-Loss: 1.7181225
+[INFO] 2022-06-01 11:16:51,042 [     main.py:  139]:	Step 1100 Train MSE-Loss: 2.9006243 RMSE-Loss: 1.7031219
+[INFO] 2022-06-01 11:17:39,533 [     main.py:  139]:	Step 1200 Train MSE-Loss: 3.013015 RMSE-Loss: 1.7358038
+[INFO] 2022-06-01 11:18:28,304 [     main.py:  139]:	Step 1300 Train MSE-Loss: 2.9315999 RMSE-Loss: 1.7121916
+[INFO] 2022-06-01 11:20:03,059 [     main.py:  155]:	Valid {'mae': 51.067772, 'score': 56.100135803222656, 'rmse': 61.132504, 'farm_mae': 49.325405, 'farm_score': 56.347042083740234, 'farm_rmse': 63.36868, 'loss': 6.493416}
+[INFO] 2022-06-01 11:21:31,792 [     main.py:  169]:	Test {'mae': 34.71890113770647, 'score': 38.37751445065744, 'rmse': 42.03612776360842, 'farm_mae': 38.254658, 'farm_score': 42.482177734375, 'farm_rmse': 46.709694, 'loss': 2.745003}
+[INFO] 2022-06-01 11:22:19,909 [     main.py:  139]:	Step 1400 Train MSE-Loss: 2.5036683 RMSE-Loss: 1.5822984
+[INFO] 2022-06-01 11:23:07,643 [     main.py:  139]:	Step 1500 Train MSE-Loss: 3.5216382 RMSE-Loss: 1.8766028
+[INFO] 2022-06-01 11:23:54,924 [     main.py:  139]:	Step 1600 Train MSE-Loss: 2.5420072 RMSE-Loss: 1.5943674
+[INFO] 2022-06-01 11:24:41,981 [     main.py:  139]:	Step 1700 Train MSE-Loss: 2.6012418 RMSE-Loss: 1.6128366
+[INFO] 2022-06-01 11:26:32,637 [     main.py:  155]:	Valid {'mae': 50.84513, 'score': 55.906185150146484, 'rmse': 60.96724, 'farm_mae': 48.7306, 'farm_score': 55.86451721191406, 'farm_rmse': 62.998436, 'loss': 6.455383}
+[INFO] 2022-06-01 11:28:01,550 [     main.py:  169]:	Test {'mae': 34.39540905948781, 'score': 37.9205639074678, 'rmse': 41.44571875544779, 'farm_mae': 37.7858, 'farm_score': 41.856163024902344, 'farm_rmse': 45.926525, 'loss': 2.6392844}
+[INFO] 2022-06-01 11:28:32,379 [     main.py:  139]:	Step 1800 Train MSE-Loss: 2.8260553 RMSE-Loss: 1.6810875
+[INFO] 2022-06-01 11:29:18,508 [     main.py:  139]:	Step 1900 Train MSE-Loss: 3.2139485 RMSE-Loss: 1.7927488
+[INFO] 2022-06-01 11:30:04,724 [     main.py:  139]:	Step 2000 Train MSE-Loss: 2.6208305 RMSE-Loss: 1.6188979
+[INFO] 2022-06-01 11:30:51,018 [     main.py:  139]:	Step 2100 Train MSE-Loss: 2.8078265 RMSE-Loss: 1.675657
+[INFO] 2022-06-01 11:32:57,412 [     main.py:  155]:	Valid {'mae': 50.56646, 'score': 55.55340576171875, 'rmse': 60.540348, 'farm_mae': 48.544865, 'farm_score': 55.501468658447266, 'farm_rmse': 62.458073, 'loss': 6.3179884}
+[INFO] 2022-06-01 11:34:26,377 [     main.py:  169]:	Test {'mae': 35.72839661896925, 'score': 38.952636257786835, 'rmse': 42.17687589660442, 'farm_mae': 39.439484, 'farm_score': 43.03522491455078, 'farm_rmse': 46.630962, 'loss': 2.5752466}
+[INFO] 2022-06-01 11:34:42,419 [     main.py:  139]:	Step 2200 Train MSE-Loss: 2.395299 RMSE-Loss: 1.5476754
+[INFO] 2022-06-01 11:35:32,591 [     main.py:  139]:	Step 2300 Train MSE-Loss: 3.9282162 RMSE-Loss: 1.9819728
+[INFO] 2022-06-01 11:36:22,742 [     main.py:  139]:	Step 2400 Train MSE-Loss: 2.5417118 RMSE-Loss: 1.5942746
+[INFO] 2022-06-01 11:37:12,233 [     main.py:  139]:	Step 2500 Train MSE-Loss: 2.8798177 RMSE-Loss: 1.6970025
+[INFO] 2022-06-01 11:38:00,910 [     main.py:  139]:	Step 2600 Train MSE-Loss: 2.8335154 RMSE-Loss: 1.6833049
+[INFO] 2022-06-01 11:39:37,159 [     main.py:  155]:	Valid {'mae': 50.351128, 'score': 55.242916107177734, 'rmse': 60.134705, 'farm_mae': 49.004715, 'farm_score': 55.61713409423828, 'farm_rmse': 62.229553, 'loss': 6.145927}
+[INFO] 2022-06-01 11:41:06,668 [     main.py:  169]:	Test {'mae': 35.96635600930605, 'score': 39.20838983103917, 'rmse': 42.4504236527723, 'farm_mae': 39.70222, 'farm_score': 43.26072311401367, 'farm_rmse': 46.819225, 'loss': 2.563312}
+[INFO] 2022-06-01 11:41:52,854 [     main.py:  139]:	Step 2700 Train MSE-Loss: 2.8902705 RMSE-Loss: 1.7000796
+[INFO] 2022-06-01 11:42:40,252 [     main.py:  139]:	Step 2800 Train MSE-Loss: 2.5207837 RMSE-Loss: 1.5876976
+[INFO] 2022-06-01 11:43:27,989 [     main.py:  139]:	Step 2900 Train MSE-Loss: 2.5178013 RMSE-Loss: 1.5867581
+[INFO] 2022-06-01 11:44:15,479 [     main.py:  139]:	Step 3000 Train MSE-Loss: 2.7240982 RMSE-Loss: 1.6504842
+[INFO] 2022-06-01 11:46:07,628 [     main.py:  155]:	Valid {'mae': 50.487297, 'score': 55.48998260498047, 'rmse': 60.492672, 'farm_mae': 48.43636, 'farm_score': 55.38999557495117, 'farm_rmse': 62.34363, 'loss': 6.313723}
+[INFO] 2022-06-01 11:47:35,003 [     main.py:  169]:	Test {'mae': 35.85963019103214, 'score': 39.12495082458372, 'rmse': 42.39027145813531, 'farm_mae': 39.548176, 'farm_score': 43.02574157714844, 'farm_rmse': 46.50331, 'loss': 2.5320551}
+[INFO] 2022-06-01 11:47:35,004 [     main.py:  181]:	Best valid Epoch 0
+[INFO] 2022-06-01 11:47:35,004 [     main.py:  182]:	Best valid score {'mae': 50.28922, 'score': 54.834564208984375, 'rmse': 59.379913, 'farm_mae': 50.535103, 'farm_score': 56.35194396972656, 'farm_rmse': 62.168785, 'loss': 5.901927}
+[INFO] 2022-06-01 11:47:35,004 [     main.py:  183]:	Best valid test-score {'mae': 39.31255740170335, 'score': 42.5542656380384, 'rmse': 45.79597387437345, 'farm_mae': 44.450897, 'farm_score': 47.72095489501953, 'farm_rmse': 50.991013, 'loss': 2.8563795}
